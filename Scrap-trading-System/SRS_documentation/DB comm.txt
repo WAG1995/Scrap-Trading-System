@@ -1,0 +1,42 @@
+show databases;
+create database demosts;
+use demosts;
+
+select * from user;
+show tables;
+update scrap_post set scrap_image="https://surlybikes.com/uploads/bikes/_medium_image/Lowside_BK0534_Background-2000x1333.jpg" where id=5;
+
+select * from scrap_post;
+select * from bid_details;
+select * from report;
+select * from feedback;
+select * from bid_details;
+
+
+
+show databases;
+create database demosts;
+use demosts;
+insert into user (address,contact_no,email,fullname,password,username) values('Raipur,Chhattisgharh','6260123982','96haneef@gmail.com','Mohd Haneef','1111','haneef');
+insert into user (address,contact_no,email,fullname,password,username) values('Kharadi,Pune,Maharashtra','9527123368','moreprajakta64@gmail.com','More Prajakta','2222','prajakta');
+insert into user (address,contact_no,email,fullname,password,username) values('Tembhurni,Maharashtra','9171230929','barboleshraddha@gmail.com','Barbole Shraddha','3333','shraddha');
+insert into user (address,contact_no,email,fullname,password,username) values('Parbhani,Maharashtra','8881232837','choudharirushi@gmail.com','Choudhari Rushikesh','4444','rushi');
+insert into user (address,contact_no,email,fullname,password,username) values('Pune,Maharashtra','9531234251','jagtapkomal@gmail.com','Jagtap Komal','5555','komal');
+
+insert into user (address,contact_no,email,fullname,password,username) values('Parbhani,Maharashtra','7588123359','shaikhomair1996@gmail.com','Shaikh Omair','219174','shaikhomair');
+insert into user (address,contact_no,email,fullname,password,username) values('Akluj,Maharashtra','9637123930','kazias1997@gmail.com','Kazi Aayaj','219086','kazias');
+
+insert into feedback (description,user_id) values('useful platform,interesting website and helpful too, all this with minimum price.Thank you so much',2);
+
+insert into report (description,user_id) values('Prajakta is froud. give me my money you idiot. Block Prajakta',1);
+
+insert into scrap_post (city,material_type,scrap_image,uploading_date,weight,user_id) values ('Raipur','Plastic and Metal','https://media.gettyimages.com/photos/scrap-metal-pieces-laying-in-a-pile-picture-id133993685?s=612x612',curdate(),12.50,1);
+insert into scrap_post (city,material_type,scrap_image,uploading_date,weight,user_id) values ('Kharadi,Pune','Papers','https://5.imimg.com/data5/DH/SR/MY-10212518/waste-newspaper-500x500.jpg',curdate(),2.50,2);
+insert into scrap_post (city,material_type,scrap_image,uploading_date,weight,user_id) values ('Tembhurni','old scooty','https://apollo-singapore.akamaized.net/v1/files/t77ywu53erxu-IN/image;s=850x0 ',curdate(),85,3);
+insert into scrap_post (city,material_type,scrap_image,uploading_date,weight,user_id) values ('Parbhani','non-working oven',' https://media.karousell.com/media/photos/products/2021/7/31/scrapjunk_us_tradition_oven_1627715211_81257b30_progressive.jpg',curdate(),10,4);
+insert into scrap_post (city,material_type,scrap_image,uploading_date,weight,user_id) values ('Pune','https://i.pinimg.com/originals/8d/d3/58/8dd35815a98e95d794b348dd9c272202.jpg',curdate(),5,5);
+
+select * from user;
+show tables;
+select * from scrap_post;
+update scrap_post set scrap_image="https://surlybikes.com/uploads/bikes/_medium_image/Lowside_BK0534_Background-2000x1333.jpg" where id=5;

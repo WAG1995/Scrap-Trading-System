@@ -1,0 +1,37 @@
+package com.app.pojos;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+//+----------+-------------+------+-----+---------+-------+
+//| Field    | Type        | Null | Key | Default | Extra |
+//+----------+-------------+------+-----+---------+-------+
+//| login_id | int         | NO   | PRI | NULL    |       |
+//| username | varchar(45) | NO   |     | NULL    |       |
+//| password | varchar(45) | NO   |     | NULL    |       |
+//+----------+-------------+------+-----+---------+-------+
+
+@Entity
+@Table(name = "login")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class Login extends BaseEntity{
+
+	//private Integer Loginid;
+	
+	@Column(length =40 )
+	private String username;
+	
+	@Column(length =40 )
+	private String password;
+	
+	@OneToOne(mappedBy = "login")  //to make foreign key in user table.
+	private User user;
+}
